@@ -51,7 +51,7 @@ export class Cliente extends Entity {
   direccion: string;
 
   @hasMany(() => Venta)
-  compras: Venta[];
+  ventas: Venta[];
 
   constructor(data?: Partial<Cliente>) {
     super(data);
